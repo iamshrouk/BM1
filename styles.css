@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+header {
+    background-color: white;
+    border-bottom: none; /* إزالة الخط الأسود تحت الشريط العلوي */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar h1 {
+    margin: 0;
+    border: none; /* إزالة أي خطوط حول العنوان */
+    margin-left: 20px; /* إضافة مساحة قبل كلمة Speedo Transfer */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none; /* إزالة الخط السفلي من الروابط */
+    color: #333; /* لون أسود باهت */
+    font-weight: normal; /* جعل الخط أخف */
+    font-size: 14px; /* يمكنك تعديل الحجم حسب الرغبة */
+}
+
+nav ul li a.active {
+    color: #b63e3e; /* لون نبيتي باهت */
+}
+
+nav ul li a:hover {
+    color: rgba(201, 18, 18, 0.678); /* لون أحمر باهت عند التمرير */
+}
+
+.login-register {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.login-register.login {
+    background-color: white; /* خلفية بيضاء لمربع تسجيل الدخول */
+    color: black;
+    border: 1px solid #ddd; /* إضافة حدود خفيفة */
+}
+
+.login-register.register {
+    background-color: hsla(0, 84%, 32%, 0.897); /* لون نبيتي غامق لمربع التسجيل */
+    color: white;
+}
+
+.background-image {
+    width: 100%; /* تغطية العرض الكامل */
+    height: auto; /* الحفاظ على النسبة الأصلية للارتفاع */
+    display: block; 
+}
+
+.image-container {
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 200px; /* المسافة من أعلى الصورة (يمكنك تعديل القيمة هنا) */
+    left: 100px; /* المسافة من يسار الصورة (يمكنك تعديل القيمة هنا) */
+    color: white; /* لون النص */
+}
+
+.text-overlay p {
+    margin: 0;
+}
+
+.simple-quit {
+    font-size: 12px; /* حجم الخط الصغير */
+}
+
+.sent-money {
+    font-size: 30px; /* حجم الخط الأكبر */
+    font-weight: bold;
+}
+
+.anywhere {
+    font-size: 30px; /* حجم الخط المتوسط */
+    font-weight: bold;
+}
+
+.fast {
+    font-size: 12px; /* حجم الخط الصغير */
+}
+.transfers {
+    font-size: 12px; /* حجم الخط الصغير */
+}
+
+.create-account-box {
+    margin-top: 20px; /* المسافة من النصوص السابقة */
+    padding: 10px 20px; /* تقليل الحجم لتصغير المربع */
+    background-color: hsla(0, 84%, 32%, 0.897); /* لون نبيتي غامق لمربع التسجيل */
+
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block; /* جعل المربع يحافظ على حجمه حول النص */
+}
+
+.create-account-link {
+    text-decoration: none;
+    color: white; /* لون النص داخل المربع */
+    font-size: 14px; /* حجم الخط أصغر */
+    font-weight: bold;
+}
+.get-started {
+    text-align: center;
+    margin: 20px 0; /* المسافة من أعلى وأسفل الصفحة */
+}
+
+.get-started p {
+    font-size: 20px; /* حجم الخط يمكن تعديله حسب الرغبة */
+    
+    color:   hsla(0, 84%, 32%, 0.897); /* تغيير لون النص إلى الأحمر */
+}
+
+
+
+
+
+.get-started .lorem-text, .get-started .printing-text {
+    font-size: 25px; /* حجم الخط */
+    font-weight: bold;
+    color: black; /* تغيير لون النص إلى الأسود */
+}
+
+.circles-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* المسافة بين الدوائر */
+    margin-top: 30px; /* المسافة من النصوص السابقة */
+}
+
+.circle {
+    width: 100px; /* عرض الدائرة */
+    height: 100px; /* ارتفاع الدائرة */
+    border-radius: 50%; /* لجعل الشكل دائري */
+    background-color: #f4f4f4; /* لون خلفية الدائرة */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.circle-icon {
+    width: 50px; 
+    height: 50px; 
+    object-fit: cover; 
+}
+
+.circle-text {
+    font-size: 14px; /* حجم النص داخل الدائرة */
+    color: black; 
+    margin-top: 5px; 
+}
+
+
+.pink-background-container {
+    display: flex; 
+    align-items: flex-start; 
+    background-color: hsla(348, 25%, 92%, 0.801); 
+    width: 100%;
+    height: 700px; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    margin-top: 20px; 
+}
+
+.pink-background-container .circle-image {
+    width: 50%; 
+    height: auto; 
+    margin-right: 20px; 
+}
+
+.additional-info-content {
+    color: black; 
+    font-size: 18px; 
+    max-width: 50%; 
+    text-align: left; 
+    margin-top: 20px; 
+    position: relative; 
+}
+
+.additional-info-content p.additional-info {
+    color: black; 
+    font-size: 40px; 
+    font-weight: bold; 
+    margin-top: 20px; 
+}
+
+.additional-info-content p.additional2-info {
+    color: black; 
+    font-size: 20px;
+    font-weight: normal; 
+    margin-top: 20px; 
+    position: relative; 
+    padding-left: 40px;
+}
+
+.additional-info-content p.additional3-info {
+    color: black; 
+    font-size: 20px; 
+    font-weight: normal; 
+    margin-top: 20px; 
+    position: relative; 
+    padding-left: 40px; 
+}
+
+.additional-info-content p.additional3-info::before {
+    content: ''; 
+    width: 24px; 
+    height: 24px; 
+    border-radius: 50%;
+    background-color: hsla(0, 84%, 32%, 0.897);
+    position: absolute; 
+    left: 0; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+.additional-info-content p.additional3-info::after {
+    content: '\2192'; 
+    font-size: 14px; 
+    color: white; 
+    position: absolute; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+
+
+
+
+
+
